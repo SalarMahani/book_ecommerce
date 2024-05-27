@@ -72,7 +72,7 @@
   justify-content: center;
   align-items: center;
   margin-top: -35px;
-  margin-left: -55px;
+  margin-right: -85px;
   border-radius: 11px;
   font-size: 14px;
   background-color: red;
@@ -80,4 +80,7 @@
 }
 .link {
   text-decoration: none;
+}
+.link img {
+  /*ma*/
 }

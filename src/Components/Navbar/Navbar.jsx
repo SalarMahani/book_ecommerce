@@ -1,22 +1,13 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-
+import navbarData from "../Assets/navbarData";
 // import pictures
 import logo from "../Assets/books.png";
 import cartIcon from "../Assets/shopping-cart.png";
 import { Link } from "react-router-dom";
 
 //adding data
-const data = [
-  { home: "خانه" },
-  { title: "کتاب ها" },
-  { author: "درباره نویسنده" },
-  { loginSignUp: "ورود / ثبت نام" },
-  { seeker: "جست و جو گر" },
-  { englishBooks: "کتاب های زبان اصلی" },
-  { translatedBooks: "کتاب های ترجمه شده" },
-];
-const mergedData = data.reduce((acc, item) => {
+const mergedData = navbarData.reduce((acc, item) => {
   return { ...acc, ...item };
 }, {});
 const {

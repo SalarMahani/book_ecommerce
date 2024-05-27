@@ -1,0 +1,17 @@
+.shopCategoryProduct {
+  width: 100%;
+  margin: 20px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 60px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+}
+.shopCategoryProduct .item {
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+}
