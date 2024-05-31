@@ -3,27 +3,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  margin-top: 30px;
-  padding-top: 30px;
+  gap: 0.938rem;
+  /*margin-top: 30px;*/
+  padding-top: 1.875rem;
   background-color: #420015;
 }
 .footerLogo {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .footerLogo {
   color: #faecfc;
-  font-size: 46px;
+  font-size: 2.875rem;
   font-weight: 700;
 }
 .footerLinks {
   display: flex;
   list-style: none;
-  gap: 50px;
+  gap: 3.125rem;
   color: #252525;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .footerLinks li {
   cursor: pointer;
@@ -31,10 +31,10 @@
 
 .footerSocialIcon {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .footerIconsContainer {
-  padding-top: 10px;
+  padding-top: 0.625rem;
   /*background: #fbfbfb;*/
   /*border: 1px solid #ebebeb;*/
   color: #faecfc;
@@ -43,22 +43,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #faecfc;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .footerCopyright hr {
   width: 80%;
   border: none;
-  border-radius: 10px;
-  height: 3px;
+  border-radius: 0.625rem;
+  height: 0.19rem;
   background: #faecfc;
 }
 .footerIconsContainer img,
 .footerLogo img {
-  width: 40px;
+  width: 2.5rem;
 }
 .footerLinks {
   color: #faecfc;

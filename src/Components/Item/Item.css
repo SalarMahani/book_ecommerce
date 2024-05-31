@@ -1,21 +1,32 @@
 .item {
-  width: 350px;
+  font-family: "B Roya", serif;
+  /*background-color: #e5e5e5;*/
+  /*display: grid;*/
+  /*justify-content: center;*/
+  /*justify-items: center;*/
+  /*justify-self: center*/
+  /*padding: 10px;*/
 }
 .item p {
-  margin: 6px 0;
+  margin: 0.4rem 0.6rem;
 }
-.item-prices {
+.item-price-description {
   display: flex;
-  gap: 20px;
+  /*gap: 80px;*/
   color: #374151;
-  font-size: 18px;
-  font-weight: 600;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 264px;
 }
 .item:hover {
   transform: scale(1.05);
   transition: 0.6s;
 }
 .item img {
-  width: 264px;
-  height: 425px;
+  width: 40.93023255813954vh;
+  height: 65.89147286821705vh;
+  /*margin-top: 15px;*/
+}
+.item-price-description {
+  font-size: 1rem;
 }

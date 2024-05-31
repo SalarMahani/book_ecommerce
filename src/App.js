@@ -26,10 +26,13 @@ function App() {
             element={<BookCategory category={"translated"} />}
           />
           <Route path={"/author"} element={<Author />} />
-          <Route path={"/book"} element={<Book />} />
-          <Route path={":bookId"} element={<Book />} />
-          <Route path={":cart"} element={<Cart />} />
-          <Route path={":loginSignUp"} element={<LoginSignUp />} />
+          <Route path={"/book"} element={<Book />}>
+            <Route path={":bookId"} element={<Book />} />
+          </Route>
+          {/*<Route path={"/book/:bookId"} element={<Book />} />*/}
+
+          <Route path={"/cart"} element={<Cart />} />
+          <Route path={"/loginSignUp"} element={<LoginSignUp />} />
         </Routes>
         <Footer />
       </BrowserRouter>

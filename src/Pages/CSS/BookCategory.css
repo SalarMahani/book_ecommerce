@@ -1,9 +1,9 @@
 .shopCategoryProduct {
   width: 100%;
-  margin: 20px 30px;
+  margin: 1.25rem 1.875rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 60px;
+  row-gap: 5rem;
   align-items: center;
   justify-content: center;
   justify-self: center;

@@ -1,5 +1,10 @@
+* {
+  font-family: "B Roya", serif;
+}
 .App {
   text-align: center;
+  font-family: "B Roya", serif;
+  background-color: #fafafa;
 }
 
 .App-logo {
