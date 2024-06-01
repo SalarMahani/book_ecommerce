@@ -5,8 +5,9 @@ import Item from "../Item/Item";
 function TranslatedBook() {
   return (
     <div className={"translatedBooks"}>
-      <h1>کتاب های ترجمه شده</h1>
+      <h1 className={"translatedBooksTitle"}>کتاب های ترجمه شده</h1>
       <hr />
+
       <div className="translated-Book">
         {translatedBook.map((item, i) => {
           return (

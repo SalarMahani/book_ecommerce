@@ -9,13 +9,16 @@ function Item(props) {
   return (
     <div className={"item"}>
       <Link to={`/book/${props.id}`}>
-        <img onClick={handleImageClick} src={props.image} alt={"book"} />
+        <img
+          className={"bookImage"}
+          onClick={handleImageClick}
+          src={props.image}
+          alt={"book"}
+        />
       </Link>
-
       <div className="item-price-description">
         <p>{props.name}</p>
         <p>{props.price}</p>
-        {/*{props.price}*/}
       </div>
     </div>
   );

@@ -1,32 +1,126 @@
 .item {
   font-family: "B Roya", serif;
-  /*background-color: #e5e5e5;*/
+  /*background-color: #cb0606;*/
   /*display: grid;*/
   /*justify-content: center;*/
   /*justify-items: center;*/
   /*justify-self: center*/
   /*padding: 10px;*/
+  /*display: flex;*/
+  width: 200rem;
 }
+
 .item p {
   margin: 0.4rem 0.6rem;
 }
+
 .item-price-description {
   display: flex;
-  /*gap: 80px;*/
-  color: #374151;
+  color: #171717;
   align-content: space-between;
   justify-content: space-between;
-  width: 264px;
+  width: 200rem;
+  /*text-align: center;*/
 }
+
 .item:hover {
   transform: scale(1.05);
   transition: 0.6s;
 }
-.item img {
-  width: 40.93023255813954vh;
-  height: 65.89147286821705vh;
-  /*margin-top: 15px;*/
-}
 .item-price-description {
   font-size: 1rem;
+  width: fit-content;
+}
+.bookImage {
+  display: inline-block;
+  width: fit-content;
+  height: auto;
+  /*display: none;*/
+}
+@media (max-width: 2252px) {
+  .item {
+    width: 13.75rem;
+    font-size: 0.87rem;
+  }
+  .item img {
+    width: 13.75rem;
+    height: auto;
+  }
+}
+@media (max-width: 1400px) {
+  .item {
+    width: 13.75rem;
+    font-size: 0.87rem;
+  }
+  .item img {
+    width: 13.75rem;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .item {
+    width: 10.625rem;
+    font-size: 0.81rem;
+  }
+  .item img {
+    width: 10.625rem;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .item {
+    width: 7rem;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .item img {
+    width: 11rem;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+  }
+  .item-price-description {
+    display: flex;
+    color: #171717;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    /*align-content: space-between;*/
+    /*justify-content: space-between;*/
+    width: 11rem;
+    /*display: none;*/
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    width: 5rem;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .item img {
+    width: 6rem;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+  }
+  .item-price-description {
+    display: flex;
+    color: #171717;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    /*align-content: space-between;*/
+    /*justify-content: space-between;*/
+    width: 6rem;
+    /*display: none;*/
+  }
 }

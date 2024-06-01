@@ -72,7 +72,6 @@
 .promoCode {
   flex: 1;
   font-size: 1.188rem;
-  font-weight: 500;
 }
 .promoCode p {
 }
@@ -127,4 +126,229 @@
 }
 .CartItemsCount {
   font-size: 1.375rem;
+}
+
+/*--> <--*/
+@media (max-width: 1280px) {
+  .cartItems {
+    margin: 3.75rem 3.125rem;
+  }
+  .mainFormat {
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr 0.5fr;
+    gap: 1.25rem;
+    padding: 0.93rem 1px;
+    font-size: 0.93rem;
+  }
+  .bookIcon {
+    height: 3.125rem;
+    width: auto;
+  }
+
+  .minus {
+    width: 1.25rem;
+    cursor: pointer;
+    margin: 1px 0rem;
+  }
+  .plus {
+    width: 1.25rem;
+    cursor: pointer;
+    position: absolute;
+    margin: 1px auto;
+    right: 90%;
+  }
+  .itemsQuantity {
+    width: 2.5rem;
+    height: 1.875rem;
+  }
+  .cartItemsDown {
+    margin: 5rem 0rem;
+    /*flex-direction: column;*/
+    gap: 0rem;
+  }
+  .CartItemsCount {
+    /*margin: 0rem auto;*/
+    /*background-color: #75102b;*/
+  }
+  .buy {
+    max-width: 12.5rem;
+    height: 2.81rem;
+    font-size: 0.81rem;
+  }
+
+  .CartItemsCount {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 10.5rem;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .cartItems {
+    margin: 3.75rem 3.125rem;
+  }
+  .mainFormat {
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr 0.5fr;
+    gap: 1.25rem;
+    padding: 0.93rem 1px;
+    font-size: 0.93rem;
+  }
+  .bookIcon {
+    height: 3.125rem;
+    width: auto;
+  }
+
+  .minus {
+    width: 1.25rem;
+    cursor: pointer;
+    margin: 1px 0rem;
+  }
+  .plus {
+    width: 1.25rem;
+    cursor: pointer;
+    position: absolute;
+    margin: 1px auto;
+    right: 90%;
+  }
+  .itemsQuantity {
+    width: 2.5rem;
+    height: 1.875rem;
+  }
+  .cartItemsDown {
+    margin: 5rem 0rem;
+    /*flex-direction: column;*/
+    gap: 0rem;
+  }
+
+  .buy {
+    max-width: 12.5rem;
+    height: 2.81rem;
+    font-size: 0.81rem;
+  }
+
+  .CartItemsCount {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 5.5rem;
+    gap: 2.5rem;
+  }
+  .promoBox button {
+    width: fit-content;
+    padding: 1px 2rem;
+    height: 3.625rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 800px) {
+  .cartItems {
+    margin: 3.75rem 3.125rem;
+  }
+  .mainFormat {
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr 0.5fr;
+    gap: 1.25rem;
+    padding: 0.93rem 1px;
+    font-size: 0.93rem;
+  }
+  .bookIcon {
+    height: 3.125rem;
+    width: auto;
+  }
+
+  .minus {
+    width: 1rem;
+    cursor: pointer;
+    margin: 5px 0rem;
+  }
+  .plus {
+    width: 1rem;
+    cursor: pointer;
+    position: absolute;
+    margin: 5px auto;
+    right: 90%;
+  }
+  .itemsQuantity {
+    width: 1.5rem;
+    height: 1.875rem;
+    font-size: 1rem;
+  }
+  .cartItemsDown {
+    margin: 5rem 0rem;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .buy {
+    max-width: 12.5rem;
+    height: 2.81rem;
+    font-size: 0.81rem;
+    /*background-color: #61dafb;*/
+  }
+
+  .CartItemsCount {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 2.5rem;
+    margin: auto;
+    gap: 2.5rem;
+  }
+  .promoBox button {
+    width: fit-content;
+    padding: 1px 2rem;
+    height: 3.625rem;
+    font-size: 1.25rem;
+  }
+  .promoCode {
+    margin: auto;
+    /*background-color: #61dafb;*/
+  }
+  .promoBox {
+    width: fit-content;
+    margin-top: 1rem;
+    /*padding-left: 20px;*/
+    height: fit-content;
+    background: #eeeeee;
+    /*padding-top: 1.5rem;*/
+  }
+  .promoBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.125rem;
+    width: fit-content;
+    height: 3.125rem;
+    /*height: 3.125px;*/
+  }
+  .promoBox button {
+    width: fit-content;
+    padding: 1px 1.2rem;
+    height: 2.125rem;
+    font-size: 1.25rem;
+  }
+  .promoBox input {
+    height: 2.125rem;
+  }
+}
+@media (max-width: 500px) {
+  .mainFormat {
+    display: none;
+    grid-template-columns: 0.1fr 1fr 0.5fr 0.5fr 0.5fr;
+    gap: 0.625rem;
+  }
+  .cartItemsFormat {
+    display: grid;
+  }
+  .promoBox input {
+    height: 1.125rem;
+  }
+  .promoBox button {
+    width: fit-content;
+    padding: 1px 0.5rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .promoBox input {
+    width: 7rem;
+  }
 }

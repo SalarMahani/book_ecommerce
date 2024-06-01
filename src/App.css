@@ -1,10 +1,12 @@
 * {
   font-family: "B Roya", serif;
+  font-size: 16px; /* 1rem = 16px */
 }
 .App {
   text-align: center;
   font-family: "B Roya", serif;
   background-color: #fafafa;
+  font-size: 16px; /* 1rem = 16px */
 }
 
 .App-logo {

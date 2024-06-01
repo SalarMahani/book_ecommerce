@@ -2,21 +2,28 @@ import React from "react";
 import "./Hero.css";
 import knight from "../Assets/knight.png";
 import arrow from "../Assets/right-arrow.png";
+import heroData from "../Assets/heroData";
+
+const mergedData = heroData.reduce((acc, item) => {
+  return { ...acc, ...item };
+}, {});
+const { title_one, title_two, title_three, buttonTitle_one } = mergedData;
+
 function Hero(props) {
   return (
     <div className={"hero"}>
       <div className="hero-left">
-        <h2>new Arrivals only</h2>
-        <div>
+        <div className={"heroInfo"}>
           <div className="hand-hand-icon">
-            <p>new</p>
+            <p>{title_one}</p>
           </div>
-          <p>collections</p>
-          <p>for everyone</p>
+          <p>{title_two}</p>
+          <p>{title_three}</p>
         </div>
         <div className="hero-latest-btn">
-          <div>Latest Collection</div>
           <img className={"arrow"} src={arrow} alt={"arrow"} />
+
+          <div>{buttonTitle_one}</div>
         </div>
       </div>
       <div className="hero-right">

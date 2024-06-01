@@ -1,22 +1,29 @@
 import React from "react";
-import "./OfferHero.css";
+import "../Hero/Hero.css";
+import knight from "../Assets/knight-v3.png";
 import arrow from "../Assets/right-arrow.png";
-import knight from "../Assets/knight-v2.png";
-function OfferHero(props) {
+import heroData from "../Assets/heroData";
+
+const mergedData = heroData.reduce((acc, item) => {
+  return { ...acc, ...item };
+}, {});
+const { title_one, title_two, title_three, buttonTitle_one } = mergedData;
+
+function Hero(props) {
   return (
-    <div className={"offerHero"}>
+    <div className={"hero"}>
       <div className="hero-left">
-        <h2>new Arrivals only</h2>
-        <div>
+        <div className={"heroInfo"}>
           <div className="hand-hand-icon">
-            <p>new</p>
+            <p>{title_one}</p>
           </div>
-          <p>collections</p>
-          <p>for everyone</p>
+          <p>{title_two}</p>
+          <p>{title_three}</p>
         </div>
-        <div className="hero-btn">
-          <div>Latest Collection</div>
+        <div className="hero-latest-btn">
           <img className={"arrow"} src={arrow} alt={"arrow"} />
+
+          <div>{buttonTitle_one}</div>
         </div>
       </div>
       <div className="hero-right">
@@ -26,4 +33,4 @@ function OfferHero(props) {
   );
 }
 
-export default OfferHero;
+export default Hero;

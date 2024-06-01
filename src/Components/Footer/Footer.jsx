@@ -1,35 +1,29 @@
 import React from "react";
 import "./Footer.css";
-import whatsApp from "../Assets/whatsapp.png";
-import telegram from "../Assets/telegram.png";
-import instagram from "../Assets/instagram.png";
+import footerData from "../Assets/footerData";
 import logo from "../Assets/books.png";
+
+import navbarData from "../Assets/navbarData";
 function Footer(props) {
+  const mergedData = footerData.reduce((acc, item) => {
+    return { ...acc, ...item };
+  }, {});
+  const { title, product, about, contact, rule } = mergedData;
+
   return (
     <div className={"footer"}>
       <div className="footerLogo">
         <img src={logo} alt={"logo"} />
-        <p>جست و جو گر</p>
+        <p className={"seeker_logo"}>{title}</p>
       </div>
       <ul className="footerLinks">
-        <li>Product</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>{product}</li>
+        <li>{about}</li>
+        <li>{contact}</li>
       </ul>
-      <div className="footerSocialIcon">
-        <div className="footerIconsContainer">
-          <img src={instagram} alt={"instagram"} />
-        </div>
-        <div className="footerIconsContainer">
-          <img src={telegram} alt={"telegram"} />
-        </div>
-        <div className="footerIconsContainer">
-          <img src={whatsApp} alt={"whatsApp"} />
-        </div>
-      </div>
       <div className="footerCopyright">
         <hr />
-        <p>Copyright @ 2024 -All Right Reserved </p>
+        <p className={"rule"}>{rule}</p>
       </div>
     </div>
   );

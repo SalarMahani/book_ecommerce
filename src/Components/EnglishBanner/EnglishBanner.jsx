@@ -1,32 +1,36 @@
 import React from "react";
-import "./EnglishBanner.css";
+import "../Hero/Hero.css";
 import knight from "../Assets/knight-v4.png";
 import arrow from "../Assets/right-arrow.png";
+import heroData from "../Assets/heroData";
 
-function EnglishBanner(props) {
+const mergedData = heroData.reduce((acc, item) => {
+  return { ...acc, ...item };
+}, {});
+const { title_one, title_two, title_three, buttonTitle_one } = mergedData;
+
+function Hero(props) {
   return (
-    <div>
-      <div className={"hero"}>
-        <div className="hero-left">
-          <h2>new Arrivals only</h2>
-          <div>
-            <div className="hand-hand-icon">
-              <p>new</p>
-            </div>
-            <p>collections</p>
-            <p>for everyone</p>
+    <div className={"hero"}>
+      <div className="hero-left">
+        <div className={"heroInfo"}>
+          <div className="hand-hand-icon">
+            <p>{title_one}</p>
           </div>
-          <div className="hero-latest-btn">
-            <div>Latest Collection</div>
-            <img className={"arrow"} src={arrow} alt={"arrow"} />
-          </div>
+          <p>{title_two}</p>
+          <p>{title_three}</p>
         </div>
-        <div className="hero-right">
-          <img className={"knight"} src={knight} alt={"knight"} />
+        <div className="hero-latest-btn">
+          <img className={"arrow"} src={arrow} alt={"arrow"} />
+
+          <div>{buttonTitle_one}</div>
         </div>
+      </div>
+      <div className="hero-right">
+        <img className={"knight"} src={knight} alt={"knight"} />
       </div>
     </div>
   );
 }
 
-export default EnglishBanner;
+export default Hero;

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.313rem;
-  height: 90vh;
+  /*height: 90vh;*/
   /*width: fit-content;*/
   margin-bottom: 2.5rem;
   font-family: "B Roya", serif;
@@ -11,7 +11,6 @@
 .someEnglishBooks h1 {
   color: #171717;
   font-size: 3.125rem;
-  font-weight: 600;
 }
 .someEnglishBooks hr {
   width: 18.75rem;
@@ -22,13 +21,74 @@
 .collections {
   margin-top: 3.125rem;
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
   /*width: 300px;*/
   /*margin-left: 200px;*/
 }
 .collections .item {
-  width: 15rem;
+  width: fit-content;
+
+  /*width: 15rem;*/
   /*height: 3000px;*/
+}
+.someEnglishBooks h1 {
+  margin-top: 1rem;
+}
+/*////////////////////////////////////////////////////////*/
+@media (max-width: 1280px) {
+  .collections .item {
+    /*width: 21rem;*/
+  }
+}
+@media (max-width: 1024px) {
+  .collections .item {
+    width: fit-content;
+  }
+}
+@media (max-width: 800px) {
+  .collections {
+    height: 50rem;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
+  .someEnglishBooks h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .someEnglishBooks hr {
+    height: 0.175rem;
+  }
+  .someEnglishBooks {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .collections {
+    height: 30rem;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
+  .someEnglishBooks h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .someEnglishBooks hr {
+    height: 0.175rem;
+  }
+  .someEnglishBooks {
+    margin-bottom: 2rem;
+  }
 }

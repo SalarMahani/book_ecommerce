@@ -1,5 +1,5 @@
 .shopCategoryProduct {
-  width: 100%;
+  /*width: 100%;*/
   margin: 1.25rem 1.875rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -8,10 +8,73 @@
   justify-content: center;
   justify-self: center;
   align-self: center;
+
+  /**/
+
+  /*height: 70vh;*/
+  /*width: fit-content;*/
+  font-family: "B Roya", serif;
+  margin-top: 3.125rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  /*width: fit-content;*/
 }
 .shopCategoryProduct .item {
   align-items: center;
   justify-content: center;
   justify-self: center;
   align-self: center;
+}
+
+/**/
+
+@media (max-width: 2252px) {
+  .shopCategoryProduct {
+    /*height: 30rem;*/
+    /*width: fit-content;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 1400px) {
+  .shopCategoryProduct {
+    /*height: 30rem;*/
+    /*width: fit-content;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 800px) {
+  .shopCategoryProduct {
+    /*height: 30rem;*/
+    /*width: fit-content;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .shopCategoryProduct {
+    /*height: 30rem;*/
+    /*width: fit-content;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
 }

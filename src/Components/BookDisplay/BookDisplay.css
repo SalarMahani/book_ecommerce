@@ -80,3 +80,114 @@ div span {
   font-size: 1.563rem;
   color: #464646;
 }
+
+@media (max-width: 1024px) {
+  .bookName {
+    font-size: 2.55rem;
+  }
+  .bookDisplay {
+    padding: 0rem;
+  }
+  .farsiProductDisplayRight {
+    margin: 1px 5rem;
+  }
+  .englishProductDisplayRight {
+    margin: 1px 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .bookDisplay {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.55rem;
+  }
+  .bookDisplay {
+    padding: 0rem;
+  }
+  .farsiProductDisplayRight {
+    margin: 1px 5rem;
+  }
+  .englishProductDisplayRight {
+    margin: 1px 5rem;
+  }
+  .englishProductDisplayRight h1 {
+    text-align: center;
+  }
+  .farsiProductDisplayRight h1 {
+    text-align: center;
+  }
+  /*.farsiProductDisplayRight {*/
+  /*  justify-content: center;*/
+  /*  justify-self: center;*/
+  /*  margin: 0.6rem auto;*/
+  /*}*/
+  /*.englishProductDisplayRight {*/
+  /*  justify-content: center;*/
+  /*  justify-self: center;*/
+  /*  margin: 0.6rem auto;*/
+  /*}*/
+  .productDisplayImg {
+    justify-content: center;
+    justify-self: center;
+    margin: 0.6rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .bookDisplay {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.55rem;
+  }
+  .bookDisplay {
+    padding: 0rem;
+    width: 17rem;
+  }
+  .buyBtn {
+    width: 12rem;
+    font-size: 1rem;
+    /*height: 3rem;*/
+  }
+  .farsiProductDisplayRight {
+    margin: 1px 5rem;
+  }
+  .englishProductDisplayRight {
+    margin: 1px 5rem;
+  }
+  .productDisplayImg {
+    justify-content: center;
+    justify-self: center;
+    margin: 0.6rem auto;
+  }
+  .productDisplayMainImg {
+    width: 12rem;
+    height: auto;
+  }
+  .bookName {
+    display: inline-block;
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+  .bookInformation div {
+    width: 12rem;
+
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .farsiProductDisplayRight {
+    justify-content: center;
+    justify-self: center;
+    margin: 0.6rem auto;
+  }
+  .englishProductDisplayRight {
+    justify-content: center;
+    justify-self: center;
+    margin: 0.6rem auto;
+  }
+  .englishProductDisplayRight .bookInformation div {
+    /*background-color: #61dafb;*/
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+  }
+}

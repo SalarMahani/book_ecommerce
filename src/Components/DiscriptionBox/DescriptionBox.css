@@ -39,3 +39,72 @@
   font-size: 1.438rem;
   color: #464646;
 }
+
+/*--> <--*/
+@media (max-width: 1280px) {
+  .bookDescription p {
+    line-height: 3.2rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .bookDescription p {
+    line-height: 3.2rem;
+    font-size: 1.5rem;
+  }
+  .farsiDescriptionBox {
+    margin: 5rem auto;
+    width: 48rem;
+  }
+  .EnglishDescriptionBox {
+    margin: 5rem auto;
+    width: 48rem;
+  }
+}
+@media (max-width: 800px) {
+  .bookDescription p {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .farsiDescriptionBox {
+    margin: 3rem auto;
+    width: 28rem;
+  }
+  .EnglishDescriptionBox {
+    margin: 3rem auto;
+    width: 28rem;
+  }
+  .bookDescription {
+    padding: 2rem;
+  }
+  .descriptionNavBox {
+    width: 5rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+  .EnglishDescriptionBox .descriptionNavigator .descriptionNavBox {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 500px) {
+  .bookDescription p {
+    line-height: 2rem;
+    font-size: 0.9rem;
+  }
+  .farsiDescriptionBox {
+    margin: 3rem auto;
+    width: 18rem;
+  }
+  .EnglishDescriptionBox {
+    margin: 3rem auto;
+    width: 18rem;
+  }
+  .bookDescription {
+    padding: 1rem;
+  }
+  .descriptionNavBox {
+    width: 5rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+}

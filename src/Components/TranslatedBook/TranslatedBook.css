@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   gap: 0.313rem;
-  height: 90vh;
+  /*height: 70vh;*/
   /*width: fit-content;*/
   font-family: "B Roya", serif;
+  /*background-color: #61dafb;*/
 }
 .translatedBooks h1 {
   color: #171717;
   font-size: 3.125rem;
-  font-weight: 600;
 }
 .translatedBooks hr {
   width: 18.75rem;
@@ -21,12 +21,71 @@
 .translated-Book {
   margin-top: 3.125rem;
   display: flex;
-  gap: 1px;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
   /*width: 300px;*/
   /*margin-left: 200px;*/
 }
 .translated-Book .item {
-  width: 18.75rem;
+  width: fit-content;
+}
+.translatedBooks h1 {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1280px) {
+  .translated-Book .item {
+    /*width: 21rem;*/
+  }
+}
+@media (max-width: 1024px) {
+  .translated-Book .item {
+    width: fit-content;
+  }
+  .translatedBooks h1 {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .translated-Book {
+    height: 50rem;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
+  .translatedBooks h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .translatedBooks hr {
+    height: 0.175rem;
+    /*display: none;*/
+  }
+}
+
+@media (max-width: 500px) {
+  .translated-Book {
+    height: 30rem;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 0rem;
+    margin-top: 0rem;
+  }
+  .translatedBooks h1 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .translatedBooks hr {
+    height: 0.175rem;
+    width: 17rem;
+    /*display: none;*/
+  }
 }

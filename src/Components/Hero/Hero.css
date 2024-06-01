@@ -1,56 +1,135 @@
 .hero {
-  height: 100vh;
+  height: 35rem;
   background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
   display: flex;
   margin-top: 1.875rem;
+  font-family: "B Titr", serif;
+  /*padding-right: 2.5rem;*/
+  width: 100%;
+}
+.heroInfo {
+  padding-right: 2.5rem;
 }
 .hero-left {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.25rem;
-  padding-left: 11.25rem;
+  /*gap: 1rem;*/
+  /*padding-left: 10.25rem;*/
   line-height: 1.1;
-}
-.hero-left h2 {
-  color: #090909;
-  font-size: 1.625rem;
-  font-weight: 600;
 }
 .hero-left p {
   color: #171717;
-  font-size: 6.25rem;
-  font-weight: 700;
+  font-size: 3.25rem;
+  letter-spacing: -3px;
+  line-height: 6.2rem;
 }
-.hero-hand-icon {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
+
 .hero-latest-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.9375rem;
+  gap: 0.938rem;
   width: 19.375rem;
   height: 4.375rem;
-  border-radius: 4.6875rem;
+  border-radius: 4.688rem;
   margin-top: 1.875rem;
   background: #d02150;
   color: white;
   font-size: 1.375rem;
   font-weight: 500;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.hero-latest-btn:hover {
+  background-color: #bb1e48;
 }
 .arrow {
-  height: 3.10077519379845vh;
+  height: 1.25rem;
+  rotate: 180deg;
 }
 .knight {
-  height: 79.36507936507937vh;
+  width: 31rem;
+  /*display: none;*/
 }
 .hero-right {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    width: 100%;
+    height: 27rem;
+  }
+  .hero-left p {
+    font-size: 2.25rem;
+    letter-spacing: -3px;
+    line-height: 4.2rem;
+  }
+  .knight {
+    width: 25rem;
+    /*display: none;*/
+  }
+  .hero-latest-btn {
+    gap: 0.938rem;
+    width: 14.375rem;
+    height: 4.375rem;
+
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    height: 15rem;
+  }
+  .hero-left p {
+    font-size: 1.5rem;
+    letter-spacing: -3px;
+    line-height: 3rem;
+  }
+  .knight {
+    width: 10rem;
+    /*display: none;*/
+  }
+  .hero-latest-btn {
+    gap: 0.438rem;
+    width: 8rem;
+    height: 2.3rem;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    height: 10rem;
+    gap: 0rem;
+  }
+  .hero-left p {
+    font-size: 0.8rem;
+    letter-spacing: -1px;
+    line-height: 1.2rem;
+  }
+  .knight {
+    width: 8rem;
+    /*display: none;*/
+  }
+  .hero-latest-btn {
+    gap: 0.438rem;
+    width: 5.375rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+    margin-right: 2rem;
+  }
+  .arrow {
+    width: 0.7rem;
+    height: auto;
+  }
 }
